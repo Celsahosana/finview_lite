@@ -3,7 +3,7 @@ import '../widgets/holding_title.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../widgets/chart.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 
  class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -22,8 +22,18 @@ bool showPercentage = false;
   @override 
   void initState() {
     super.initState();
+    checkLoginStatus();
     loadData();
   }
+
+  Future<void> checkLoginStatus() async {
+  final prefs = await SharedPreferences.getInstance();
+  final isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
+
+  if (!isLoggedIn && mounted) {
+    Navigator.pushReplacementNamed(context, '/login');
+  }
+}
 
   Future<void> loadData() async {
     final jsonString = await rootBundle.loadString('portfolio.json');
