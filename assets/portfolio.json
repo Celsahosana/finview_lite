@@ -1,0 +1,28 @@
+{
+  "user":{
+    "name" : "Aarav Patel",
+    "portfolio_value": 150000,
+    "total_gain": 12000,
+    "total_loss": 1242
+  } , 
+  "holdings": [
+    {
+      "name": "Tata Consultancy",
+      "units": 5,
+      "avg_cost": 3200,
+      "current_price": 3400
+    },
+    {
+      "name": "Infosys Ltd",
+      "units": 10,
+      "avg_cost": 1400,
+      "current_price": 1500
+    },
+    {
+      "name": "Bp Ltd",
+      "units": 10,
+      "avg_cost": 1400,
+      "current_price": 1500
+    }
+  ]
+}
