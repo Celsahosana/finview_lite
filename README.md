@@ -1,16 +1,23 @@
-# finview_lite
+# 💸 FinView Lite
 
-A new Flutter project.
+A simple Flutter dashboard app that visualizes your investment portfolio: showing total value, gain/loss, and asset allocation with charts and a percentage toggle.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📊 Portfolio summary (total value, total gain/loss)
+- 📈 Individual holdings with name, units, cost, value, and gain/loss
+- 🧮 Toggle between **₹ amount** and **% returns**
+- 🥧 Pie chart showing allocation across holdings
+- 🔄 Sorting options (by name, value, or gain)
+- 🕳️ Graceful handling for no-data scenarios
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧰 Setup Guide
+
+### 🐦 Flutter version
+This app was built using:
+Flutter 3.24.0
+Dart 3.3.0
